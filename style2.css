@@ -1,0 +1,165 @@
+/* 全体レイアウト */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 20px;
+    background: linear-gradient(to right, #fefcea, #f1da36);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #d04e4e;
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+}
+
+/* 商品一覧 */
+.menu {
+    display: flex;
+    flex-wrap: wrap;               
+    justify-content: center;       
+    gap: 24px;                     
+    padding: 0 10px;
+}
+
+/* 商品カード */
+.product {
+    background: #ffffffcc;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 160px;                  
+    text-align: center;
+    padding: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.product img {
+    width: 100px;                  
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product div {
+    margin: 4px 0;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 4px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input.error {
+    background-color: #ffd8d8;
+}
+
+/* ボタン */
+.buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+button {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+
+/* 履歴表示 */
+.history {
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.history h2 {
+    text-align: center;
+    color: #444;
+}
+
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.history th {
+    background-color: #ffe680;
+    padding: 12px;
+    border-bottom: 2px solid #ccc;
+}
+
+.history td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.history tbody tr:nth-child(even) {
+    background-color: #fffbe6;
+}
+
+/* フッター */
+footer {
+    margin-top: 60px;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.history th, .history td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.history tr:last-child {
+    background-color: #ffe;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .product {
+    width: 45%;
+    }
+}
+
+.menu {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    table {
+    font-size: 12px;
+    }
+

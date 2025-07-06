@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>カクテル注文システム</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>カクテル注文システム</h1>
+    <div class="menu" id="menu"></div>
+
+    <div class="buttons">
+    <button onclick="placeOrder()">注文</button>
+    <button onclick="checkout()">会計</button>
+    </div>
+
+    <div class="history" id="history">
+    <h2>注文履歴</h2>
+    <table id="historyTable">
+    <thead>
+        <tr>
+        <th>回数</th>
+        <th>Tequila</th>
+        <th>Gin</th>
+        <th>Pina</th>
+        <th>Margaret</th>
+        <th>Negroni</th>
+        <th>合計</th>
+        </tr>
+    </thead>
+    <tbody id="historyBody"></tbody>
+    </table>
+</div>
+
+    <footer>
+    <p>Copyright &copy; 2025 LIU FANQI's BAR(24CA0242), All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
